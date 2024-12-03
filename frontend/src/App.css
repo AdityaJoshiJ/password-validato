@@ -1,0 +1,102 @@
+/* Global styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main container */
+.app-container {
+  text-align: center;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Header */
+h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 1.5rem;
+}
+
+/* Form container */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Password input */
+.password-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.password-input:focus {
+  outline: none;
+  border-color: #5c67f2;
+}
+
+/* Check button */
+.check-button {
+  background-color: #5c67f2;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.check-button:hover {
+  background-color: #4a52cc;
+}
+
+/* Error message */
+.error-message {
+  color: red;
+  margin-top: 1rem;
+  font-size: 14px;
+}
+
+/* Strength display */
+.strength-display {
+  margin-top: 1rem;
+  font-size: 16px;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.strength-display.weak {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.strength-display.good {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.strength-display.strong {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.strength-display.excellent {
+  background-color: #cce5ff;
+  color: #004085;
+}
